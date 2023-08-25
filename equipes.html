@@ -1,24 +1,140 @@
 <html>
     <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: aquamarine;
+            color: black;
+            border: 3px black solid;
+            text-align: center;
+        }
+        #form{
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: black;
+            border: 3px black solid;
+            /* border-radius: 15px; */
+            text-align: center;
+        }
+        #form input{
+            color: rgb(33, 150, 253);
+            border-color: rgb(33, 150, 253);
+        }
+        #form button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        #form button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
+        nav button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        nav button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
         table{
             text-align: center;
+            width: 100%;
         }
         th{
             border: 1px black solid;
+            border-radius: 5px;
+            height: 50px;
+            color: white;
+            background-color: #2293D1;
         }
         td{
-            border: 1px black solid;
+            border: 1px #2293D1 solid;
+            border-radius: 5px;
+            height: 50px;
+        }
+        table a{
+            text-decoration: none;
+            color: white;
+        }
+        table img{
+            width: 40px;
+        }
+        table .redbull{
+            background-color: #3671C6;
+        }
+        table .ferrari{
+            background-color: #F91536;
+        }
+        table .aston{
+            background-color: #358C75;
+        }
+        table .mercedes{
+            background-color: #6CD3BF;
+        }
+        table .haas{
+            background-color: #B6BABD;
+        }
+        table .alfa{
+            background-color: #C92D4B;
+        }
+        table .alpha{
+            background-color: #5E8FAA;
+        }
+        table .williams{
+            background-color: #37BEDD;
+        }
+        table .alpine{
+            background-color: #2293D1;
+        }
+        table .mclaren{
+            background-color: #F58020;
+        }
+        footer{
+            text-align: center;
+            padding: 30px;
+            background-color: #2293D1;
+            font-size: 30px;
+            color: white;
         }
     </style>
     <head>
-        <title>Campeonato de Equies - F1 2023</title>
+        <title>Campeonato de Equipes - F1 2023</title>
     </head>
     <header>
-
+        <h1>Campeonato de Equipes - F1 2023</h1>
+        <h3>pontos após a etapa da Bélgica</h3>
+        <nav>
+            <a href="pilotos.html"><button>Ver campeonato de Pilotos</button></a>
+            <a href="calendario.html"><button>Ver calendário 2023</button></a>
+            <a href="https://www.formula1.com/"><button>Site oficial Fórmula 1</button></a>
+        </nav>
     </header>
     <body>
-        <h1>Campeonato de Equipes - F1 2023</h1>
-        <a href="pilotos.html">Ver campeonato de Pilotos</a>
+        <main>
+            <section id="form">
+                <h2>Formulário</h2>
+                <form method="GET" action="https://www.w3schools.com/action_page.php">
+                    <label>Nome</label>
+                    <input name="nome" type="text" placeholder="Digite um nome">
+                    <label>Texto para Leitura</label>
+                    <input name="leitura" type="text" disabled value="Campo Desativado">
+                    <label>Número</label>
+                    <input name="numero" type="number" min="25000" max="30000">
+                    <input name="radiobox" type="radio"> Radio Box 1
+                    <input name="radiobox" type="radio"> Radio Box 2
+                    <input name="checkbox" type="checkbox"> Checkbox
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
         <table>
             <tr>
                 <!-- Está tabela segue a seguinte estrutura, POS significa a posição no campeonato, EQUIPE mostra qual o nome da equipe que está ocupando a posição e PONTOS mostra a quantidade total de pontos que a equipe conseguiu até o momeneto no campeonato -->
@@ -28,54 +144,57 @@
             </tr>
             <tr>
                 <td><b>1</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html">RedBull Racing</a></td>
+                <td class="redbull"><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html"><b>REDBULL RACING</b></a></td>
                 <td><b>503</b></td>
             </tr>
             <tr>
                 <td><b>2</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html">Mercedes</a></td>
+                <td class="mercedes"><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html"><b>MERCEDES</b></a></td>
                 <td><b>247</b></td>
             </tr>
             <tr>
                 <td><b>3</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html">Aston Martin</a></td>
+                <td class="aston"><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html"><b>ASTON MARTIN</b></a></td>
                 <td><b>196</b></td>
             </tr>
             <tr>
                 <td><b>4</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html">Ferrari</a></td>
+                <td class="ferrari"><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html"><b>FERRARI</b></a></td>
                 <td><b>191</b></td>
             </tr>
             <tr>
                 <td><b>5</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html">McLaren</a></td>
+                <td class="mclaren"><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html"><b>MCLAREN</b></a></td>
                 <td><b>103</b></td>
             </tr>
             <tr>
                 <td><b>6</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html">Alpine</a></td>
+                <td class="alpine"><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html"><b>ALPINE</b></a></td>
                 <td><b>57</b></td>
             </tr>
             <tr>
                 <td><b>7</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html">Williams</a></td>
+                <td class="williams"><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html"><b>WILLIAMS</b></a></td>
                 <td><b>11</b></td>
             </tr>
             <tr>
                 <td><b>8</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html">Haas</a></td>
-                <td><b>1</b></td>
+                <td class="haas"><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html"><b>HAAS</b></a></td>
+                <td><b>11</b></td>
             </tr>
             <tr>
                 <td><b>9</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html">Alfa Romeo</a></td>
+                <td class="alfa"><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html"><b>ALFA ROMEO</b></a></td>
                 <td><b>9</b></td>
             </tr>
             <tr>
                 <td><b>10</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html">Alpha Tauri</a></td>
+                <td class="alpha"><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html"><b>ALPHA TAURI</b></a></td>
                 <td><b>3</b></td>
             </tr>
         </table>
+        <footer>
+            Tarefa para Disciplina de Linguagens de Marcação e Script
+        </footer>
     </body>
 </html>

@@ -1,158 +1,591 @@
 <html>
     <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: aquamarine;
+            color: black;
+            border: 3px black solid;
+            text-align: center;
+        }
+        #form{
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: black;
+            border: 3px black solid;
+            /* border-radius: 15px; */
+            text-align: center;
+        }
+        #form input{
+            color: rgb(33, 150, 253);
+            border-color: rgb(33, 150, 253);
+        }
+        #form button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        #form button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
+        nav button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        nav button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
         table{
             text-align: center;
+            width: 100%;
         }
         th{
             border: 1px black solid;
+            border-radius: 5px;
+            height: 50px;
+            color: white;
+            background-color: #2293D1;
         }
         td{
-            border: 1px black solid;
+            border: 1px #2293D1 solid;
+            border-radius: 5px;
+            height: 50px;
+        }
+        table a{
+            text-decoration: none;
+            color: white;
+        }
+        table img{
+            width: 40px;
+        }
+        table .redbull{
+            background-color: #3671C6;
+        }
+        table .sobrenome_redbull{
+            color: #3671C6;
+        }
+        table .ferrari{
+            background-color: #F91536;
+        }
+        table .sobrenome_ferrari{
+            color: #F91536;
+        }
+        table .aston{
+            background-color: #358C75;
+        }
+        table .sobrenome_aston{
+            color: #358C75;
+        }
+        table .mercedes{
+            background-color: #6CD3BF;
+        }
+        table .sobrenome_mercedes{
+            color: #6CD3BF;
+        }
+        table .haas{
+            background-color: #B6BABD;
+        }
+        table .sobrenome_haas{
+            color: #B6BABD;
+        }
+        table .alfa{
+            background-color: #C92D4B;
+        }
+        table .sobrenome_alfa{
+            color: #C92D4B;
+        }
+        table .alpha{
+            background-color: #5E8FAA;
+        }
+        table .sobrenome_alpha{
+            color: #5E8FAA;
+        }
+        table .williams{
+            background-color: #37BEDD;
+        }
+        table .sobrenome_williams{
+            color: #37BEDD;
+        }
+        table .alpine{
+            background-color: #2293D1;
+        }
+        table .sobrenome_alpine{
+            color: #2293D1;
+        }
+        table .mclaren{
+            background-color: #F58020;
+        }
+        table .sobrenome_mclaren{
+            color: #F58020;
+        }
+        .p1{
+            background-color: rgb(255, 221, 0)
+        }
+        .p2{
+            background-color: rgb(185, 185, 185)
+        }
+        .p3{
+            background-color: rgb(224, 120, 0)
+        }
+        .pontos{
+            background-color: rgb(183, 254, 229)
+        }
+        .fora_pontos{
+            background-color: rgb(149, 123, 228)
+        }
+        .ret{
+            background-color: rgb(255, 6, 155)
+        }
+        footer{
+            text-align: center;
+            padding: 30px;
+            background-color: #2293D1;
+            font-size: 30px;
+            color: white;
         }
     </style>
     <head>
         <title>Campeonato de Pilotos - F1 2023</title>
     </head>
-    <header>
-
-    </header>
     <body>
-        <h1>Campeonato de Pilotos - F1 2023</h1>
-        <a href="equipes.html">Ver campeonato de equipes</a>
-        <table>
-            <tr>
-                <!-- Está tabela segue a seguinte estrutura, POS significa a posição no campeonato,PILOTOO mostra o nome e o sobrenome do piloto (sobrenome em negrito) que está ocupando a posição, EQUIPE mostra qual o nome da equipe que o piloto pertence e PONTOS mostra a quantidade total de pontos que o piloto conseguiu até o momeneto no campeonato -->
-                <th width="50px"><b>POS</b></th>
-                <th width="300px"><b>PILOTO</b></th>
-                <th width="250px"><b>EQUIPE</b></th>
-                <th width="100px"><b>PONTOS</b></th>
-            </tr>
-            <tr>
-                <td><b>1</b></td>
-                <td>Max <b>VERSTAPPEN</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html">RedBull Racing</a></td>
-                <td><b>314</b></td>
-            </tr>
-            <tr>
-                <td><b>2</b></td>
-                <td>Sergio <b>PEREZ</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html">RedBull Racing</a></td>
-                <td><b>189</b></td>
-            </tr>
-            <tr>
-                <td><b>3</b></td>
-                <td>Fernando <b>ALONSO</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html">Aston Martin</a></td>
-                <td><b>149</b></td>
-            </tr>
-            <tr>
-                <td><b>4</b></td>
-                <td>Lewis <b>HAMILTON</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html">Mercedes</a></td>
-                <td><b>148</b></td>
-            </tr>
-            <tr>
-                <td><b>5</b></td>
-                <td>Charles <b>LECLERC</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html">Ferrari</a></td>
-                <td><b>99</b></td>
-            </tr>
-            <tr>
-                <td><b>6</b></td>
-                <td>George <b>RUSSELL</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html">Mercedes</a></td>
-                <td><b>99</b></td>
-            </tr>
-            <tr>
-                <td><b>7</b></td>
-                <td>Carlos <b>SAINZ</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html">Ferrari</a></td>
-                <td><b>92</b></td>
-            </tr>
-            <tr>
-                <td><b>8</b></td>
-                <td>Lando <b>NORRIS</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html">McLaren</a></td>
-                <td><b>69</b></td>
-            </tr>
-            <tr>
-                <td><b>9</b></td>
-                <td>Lance <b>STROLL</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html">Aston Martin</a></td>
-                <td><b>47</b></td>
-            </tr>
-            <tr>
-                <td><b>10</b></td>
-                <td>Esteban <b>OCON</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html">Alpine</a></td>
-                <td><b>35</b></td>
-            </tr>
-            <tr>
-                <td><b>11</b></td>
-                <td>Oscar <b>PIASTRI</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html">McLaren</a></td>
-                <td><b>34</b></td>
-            </tr>
-            <tr>
-                <td><b>12</b></td>
-                <td>Pierre <b>GASLY</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html">Alpine</a></td>
-                <td><b>22</b></td>
-            </tr>
-            <tr>
-                <td><b>13</b></td>
-                <td>Alexander <b>ALBON</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html">Williams</a></td>
-                <td><b>11</b></td>
-            </tr>
-            <tr>
-                <td><b>14</b></td>
-                <td>Nico <b>HULKENBERG</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html">Haas</a></td>
-                <td><b>9</b></td>
-            </tr>
-            <tr>
-                <td><b>15</b></td>
-                <td>Valtteri <b>BOTTAS</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html">Alfa Romeo</a></td>
-                <td><b>5</b></td>
-            </tr>
-            <tr>
-                <td><b>16</b></td>
-                <td><b>ZHOU</b> Guanyu</td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html">Alfa Romeo</a></td>
-                <td><b>4</b></td>
-            </tr>
-            <tr>
-                <td><b>17</b></td>
-                <td>Yuki <b>TSUNODA</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html">Alpha Tauri</a></td>
-                <td><b>3</b></td>
-            </tr>
-            <tr>
-                <td><b>18</b></td>
-                <td>Kevin <b>MAGNUSSEN</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html">Haas</a></td>
-                <td><b>2</b></td>
-            </tr>
-            <tr>
-                <td><b>19</b></td>
-                <td>Logan <b>SARGENT</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html">Williams</a></td>
-                <td><b>0</b></td>
-            </tr>
-            <tr>
-                <td><b>20</b></td>
-                <td>Nyck  <b>DE VRIES</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html">Alpha Tauri</a></td>
-                <td><b>0</b></td>
-            </tr>
-            <tr>
-                <td><b>21</b></td>
-                <td>Daniel <b>RICCIARDO</b></td>
-                <td><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html">Alpha Tauri</a></td>
-                <td><b>0</b></td>
-            </tr>
-        </table>
+        <header>
+            <h1>Campeonato de Pilotos - F1 2023</h1>
+            <h3>pontos após a etapa da Bélgica</h3>
+            <nav>
+                <a href="equipes.html"><button>Ver campeonato de Equipes</button></a>
+                <a href="calendario.html"><button>Ver calendário 2023</button></a>
+                <a href="https://www.formula1.com/"><button>Site oficial Fórmula 1</button></a>
+            </nav>
+        </header>
+        <main>
+            <section id="form">
+                <h2>Formulário</h2>
+                <form method="GET" action="https://www.w3schools.com/action_page.php">
+                    <label>Nome</label>
+                    <input name="nome" type="text" placeholder="Digite um nome">
+                    <label>Texto para Leitura</label>
+                    <input name="leitura" type="text" disabled value="Campo Desativado">
+                    <label>Número</label>
+                    <input name="numero" type="number" min="25000" max="30000">
+                    <input name="radiobox" type="radio"> Radio Box 1
+                    <input name="radiobox" type="radio"> Radio Box 2
+                    <input name="checkbox" type="checkbox"> Checkbox
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <section id="classificacao">
+                <table>
+                    <tr>
+                        <!-- Está tabela segue a seguinte estrutura, POS significa a posição no campeonato,PILOTOO mostra o nome e o sobrenome do piloto (sobrenome em negrito) que está ocupando a posição, EQUIPE mostra qual o nome da equipe que o piloto pertence e PONTOS mostra a quantidade total de pontos que o piloto conseguiu até o momeneto no campeonato -->
+                        <th width="50px"><b>POS</b></th>
+                        <th width="300px"><b>PILOTO</b></th>
+                        <th width="250px"><b>EQUIPE</b></th>
+                        <th width="50px"><b>BHR</b></th>
+                        <th width="50px"><b>SAU</b></th>
+                        <th width="50px"><b>AUS</b></th>
+                        <th width="50px"><b>AZE</b></th>
+                        <th width="50px"><b>MIA</b></th>
+                        <th width="50px"><b>MON</b></th>
+                        <th width="50px"><b>ESP</b></th>
+                        <th width="50px"><b>CAN</b></th>
+                        <th width="50px"><b>AUT</b></th>
+                        <th width="50px"><b>GBR</b></th>
+                        <th width="50px"><b>HUN</b></th>
+                        <th width="50px"><b>BEL</b></th>
+                        <th width="100px"><b>PONTOS</b></th>
+                    </tr>
+                    <tr>
+                        <td><b>1</b></td>
+                        <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+                        <td class="redbull"><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html"><b>REDBULL RACING</b></a></td>
+                        <td class="p1">1</td>
+                        <td class="p2">2</td>
+                        <td class="p1">1</td>
+                        <td class="p2">2</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td class="p1">1</td>
+                        <td><b>314</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>2</b></td>
+                        <td>Sergio <b class="sobrenome_redbull">PEREZ</b></td>
+                        <td class="redbull"><a href="https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html"><b>REDBULL RACING</b></a></td>
+                        <td class="p2">2</td>
+                        <td class="p1">1</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p1">1</td>
+                        <td class="p2">2</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p3">3</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p3">3</td>
+                        <td class="p2">2</td>
+                        <td><b>189</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>3</b></td>
+                        <td>Fernando <b class="sobrenome_aston">ALONSO</b></td>
+                        <td class="aston"><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html"><b>ASTON MARTIN</b></a></td>
+                        <td class="p3">3</td>
+                        <td class="p3">3</td>
+                        <td class="p3">3</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p3">3</td>
+                        <td class="p2">2</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p2">2</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p5 pontos">5</td>
+                        <td><b>149</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>4</b></td>
+                        <td>Lewis <b class="sobrenome_mercedes">HAMILTON</b></td>
+                        <td class="mercedes"><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html"><b>MERCEDES</b></a></td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p2">2</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p2">2</td>
+                        <td class="p3">3</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p3">3</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p4 pontos">4</td>
+                        <td><b>148</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>5</b></td>
+                        <td>Charles <b class="sobrenome_ferrari">LECLERC</b></td>
+                        <td class="ferrari"><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html"><b>FERRARI</b></a></td>
+                        <td class="ret">Ret</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="ret">Ret</td>
+                        <td class="p3">3</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p2">2</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p3">3</td>
+                        <td><b>99</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>6</b></td>
+                        <td>George <b class="sobrenome_mercedes">RUSSELL</b></td>
+                        <td class="mercedes"><a href="https://www.formula1.com/en/results.html/2023/team/mercedes.html"><b>MERCEDES</b></a></td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="ret">Ret</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p3">3</td>
+                        <td class="ret">Ret</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p6 pontos">6</td>
+                        <td><b>99</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>7</b></td>
+                        <td>Carlos <b class="sobrenome_ferrari">SAINZ</b></td>
+                        <td class="ferrari"><a href="https://www.formula1.com/en/results.html/2023/team/ferrari.html"><b>FERRARI</b></a></td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="ret">Ret</td>
+                        <td><b>92</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>8</b></td>
+                        <td>Lando <b class="sobrenome_mclaren">NORRIS</b></td>
+                        <td class="mclaren"><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html"><b>MCLAREN</b></a></td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p2">2</td>
+                        <td class="p2">2</td>
+                        <td class="p7 pontos">7</td>
+                        <td><b>69</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>9</b></td>
+                        <td>Lance <b class="sobrenome_aston">STROLL</b></td>
+                        <td class="aston"><a href="https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html"><b>ASTON MARTIN</b></a></td>
+                        <td class="p6 pontos">6</td>
+                        <td class="ret">Ret</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="ret">Ret</td>
+                        <td class="p6 pontos">6</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p9 pontos">9</td>
+                        <td><b>47</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>10</b></td>
+                        <td>Esteban <b class="sobrenome_alpine">OCON</b></td>
+                        <td class="alpine"><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html"><b>ALPINE</b>></a></td>
+                        <td class="ret">Ret</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p3">3</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="ret">Ret</td>
+                        <td class="ret">Ret</td>
+                        <td class="p8 pontos">8</td>
+                        <td><b>35</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>11</b></td>
+                        <td>Oscar <b class="sobrenome_mclaren">PIASTRI</b></td>
+                        <td class="mclaren"><a href="https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html"><b>MCLAREN</b></a></td>
+                        <td class="ret">Ret</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p19 fora_pontos">19</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p4 pontos">4</td>
+                        <td class="p5 pontos">5</td>
+                        <td class="ret">Ret</td>
+                        <td><b>34</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>12</b></td>
+                        <td>Pierre <b class="sobrenome_alpine">GASLY</b></td>
+                        <td class="alpine"><a href="https://www.formula1.com/en/results.html/2023/team/alpine_renault.html"><b>ALPINE</b></a></td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="ret">Ret</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td><b>22</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>13</b></td>
+                        <td>Alexander <b class="sobrenome_williams">ALBON</b></td>
+                        <td class="williams"><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html"><b>WILLIAMS</b></a></td>
+                        <td class="p10 pontos">10</td>
+                        <td class="ret">Ret</td>
+                        <td class="ret">Ret</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td><b>11</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>14</b></td>
+                        <td>Nico <b class="sobrenome_haas">HULKENBERG</b></td>
+                        <td class="haas"><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html"><b>HAAS</b></a></td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p7 pontos">7</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="ret">Ret</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td><b>9</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>15</b></td>
+                        <td>Valtteri <b class="sobrenome_alfa">BOTTAS</b></td>
+                        <td class="alfa"><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html"><b>ALFA ROMEO</b></a></td>
+                        <td class="p8 pontos">8</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p19 fora_pontos">19</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td><b>5</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>16</b></td>
+                        <td><b class="sobrenome_alfa">ZHOU</b> Guanyu</td>
+                        <td class="alfa"><a href="https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html"><b>ALFA ROMEO</b></a></td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="ret">Ret</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td><b>4</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>17</b></td>
+                        <td>Yuki <b class="sobrenome_alpha">TSUNODA</b></td>
+                        <td class="alpha"><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html"><b>ALPHA TAURI</b></a></td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p9 pontos">9</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p19 fora_pontos">19</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="p10 pontos">10</td>
+                        <td><b>3</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>18</b></td>
+                        <td>Kevin <b class="sobrenome_haas">MAGNUSSEN</b></td>
+                        <td class="haas"><a href="https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html"><b>HAAS</b></a></td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p10 pontos">10</td>
+                        <td class="p19 fora_pontos">19</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="ret">Ret</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td><b>2</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>19</b></td>
+                        <td>Logan <b class="sobrenome_williams">SARGENT</b></td>
+                        <td class="williams"><a href="https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html"><b>WILLIAMS</b></a></td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td class="p20 fora_pontos">20</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p20 fora_pontos">20</td>
+                        <td class="ret">Ret</td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p11 fora_pontos">11</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td><b>0</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>20</b></td>
+                        <td>Nyck  <b class="sobrenome_alpha">DE VRIES</b></td>
+                        <td class="alpha"><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html"><b>ALPHA TAURI</b></a></td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p15 fora_pontos">15</td>
+                        <td class="ret">Ret</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p12 fora_pontos">12</td>
+                        <td class="p14 fora_pontos">14</td>
+                        <td class="p18 fora_pontos">18</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="p17 fora_pontos">17</td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td><b>0</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>21</b></td>
+                        <td>Daniel <b class="sobrenome_alpha">RICCIARDO</b></td>
+                        <td class="alpha"><a href="https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html"><b>ALPHA TAURI</b></a></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="0"></td>
+                        <td class="p13 fora_pontos">13</td>
+                        <td class="p16 fora_pontos">16</td>
+                        <td><b>0</b></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            Tarefa para Disciplina de Linguagens de Marcação e Script
+        </footer>
     </body>
 </html>

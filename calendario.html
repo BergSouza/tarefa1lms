@@ -1,0 +1,279 @@
+<html>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: aquamarine;
+            color: black;
+            border: 3px black solid;
+            text-align: center;
+        }
+        #form{
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: black;
+            border: 3px black solid;
+            /* border-radius: 15px; */
+            text-align: center;
+        }
+        #form input{
+            color: rgb(33, 150, 253);
+            border-color: rgb(33, 150, 253);
+        }
+        #form button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        #form button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
+        nav button{
+            padding: 10px;
+            background-color: rgb(33, 150, 253);
+            color: white;
+            box-shadow: 3px 3px 0 0 black;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        nav button:hover{
+            background-color: white;
+            color: rgb(33, 150, 253);
+        }
+        table{
+            text-align: center;
+            width: 100%;
+        }
+        th{
+            border: 1px black solid;
+            border-radius: 5px;
+            height: 50px;
+            color: white;
+            background-color: #2293D1;
+        }
+        td{
+            border: 1px #2293D1 solid;
+            border-radius: 5px;
+            height: 50px;
+        }
+        table a{
+            text-decoration: none;
+            color: white;
+        }
+        table img{
+            width: 40px;
+        }
+        table .sobrenome_redbull{
+            color: #3671C6;
+        }
+        footer{
+            text-align: center;
+            padding: 30px;
+            background-color: #2293D1;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+    <head>
+        <title>Calendário - F1 2023</title>
+    </head>
+    <header>
+        <h1>Calendário - F1 2023</h1>
+        <h3>pontos após a etapa da Bélgica</h3>
+        <nav>
+            <a href="pilotos.html"><button>Ver campeonato de Pilotos</button></a>
+            <a href="calendario.html"><button>Ver calendário 2023</button></a>
+            <a href="https://www.formula1.com/"><button>Site oficial Fórmula 1</button></a>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section id="form">
+                <h2>Formulário</h2>
+                <form method="GET" action="https://www.w3schools.com/action_page.php">
+                    <label>Nome</label>
+                    <input name="nome" type="text" placeholder="Digite um nome">
+                    <label>Texto para Leitura</label>
+                    <input name="leitura" type="text" disabled value="Campo Desativado">
+                    <label>Número</label>
+                    <input name="numero" type="number" min="25000" max="30000">
+                    <input name="radiobox" type="radio"> Radio Box 1
+                    <input name="radiobox" type="radio"> Radio Box 2
+                    <input name="checkbox" type="checkbox"> Checkbox
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <table>
+            <tr>
+                <!-- Está tabela segue a seguinte estrutura, POS significa a posição no campeonato, EQUIPE mostra qual o nome da equipe que está ocupando a posição e PONTOS mostra a quantidade total de pontos que a equipe conseguiu até o momeneto no campeonato -->
+                <th width="50px"><b>RODADA</b></th>
+                <th width="250px"><b>GRANDE PRÊMIO</b></th>
+                <th width="100px"><b>CIRCUITO</b></th>
+                <th width="100px"><b>DATA</b></th>
+                <th width="100px"><b>VENCEDOR</b></th>
+            </tr>
+            <tr>
+                <td><b>1</b></td>
+                <td>Grande Prêmio do Bahrein</td>
+                <td>Bahrain International Circuit, Sakhir</td>
+                <td>5 de Março</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>2</b></td>
+                <td>Grande Prêmio da Arábia Saudita</td>
+                <td>Jeddah Corniche Circuit, Jeddah</td>
+                <td>19 de Março</td>
+                <td>Sergio <b class="sobrenome_redbull">PEREZ</b></td>
+            </tr>
+            <tr>
+                <td><b>3</b></td>
+                <td>Grande Prêmio da Austrália</td>
+                <td>Albert Park Circuit, Melbourne</td>
+                <td>2 de Abril</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>4</b></td>
+                <td>Grande Prêmio do Azerbaijão</td>
+                <td>Baku City Circuit, Baku</td>
+                <td>30 de Abril</td>
+                <td>Sergio <b class="sobrenome_redbull">PEREZ</b></td>
+            </tr>
+            <tr>
+                <td><b>5</b></td>
+                <td>Grande Prêmio de Miami</td>
+                <td>Miami International Autodrome, Miami Gardens, Florida</td>
+                <td>7 de Maio</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>6</b></td>
+                <td>Grande Prêmio de Mônaco</td>
+                <td>Circuit de Monaco, Monaco</td>
+                <td>28 de Maio</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>7</b></td>
+                <td>Grande Prêmio da Espanha</td>
+                <td>Circuit de Barcelona_Catalunya, Montmeló</td>
+                <td>4 de Junho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>8</b></td>
+                <td>Grande Prêmio do Canadá</td>
+                <td>Circuit Gilles Villeneuve, Montreal</td>
+                <td>18 de Junho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>9</b></td>
+                <td>Grande Prêmio da Áustria</td>
+                <td>Red Bull Ring, Spielberg</td>
+                <td>2 de Julho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>10</b></td>
+                <td>Grande Prêmio da Grã Bretanha</td>
+                <td>Silverstone Circuit, Silverstone</td>
+                <td>9 de Julho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>11</b></td>
+                <td>Grande Prêmio da Hungria</td>
+                <td>Hungaroring, Mogyoród</td>
+                <td>23 de Julho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>12</b></td>
+                <td>Grande Prêmio da Bélgica</td>
+                <td>Circuit de Spa-Francorchamps, Stavelot</td>
+                <td>30 de Julho</td>
+                <td>Max <b class="sobrenome_redbull">VERSTAPPEN</b></td>
+            </tr>
+            <tr>
+                <td><b>13</b></td>
+                <td>Grande Prêmio da Holanda</td>
+                <td>Circuit Zandvoort</td>
+                <td>27 de Agosto</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>14</b></td>
+                <td>Grande Prêmio da Itália</td>
+                <td>Monza Circuit, Monza</td>
+                <td>3 de Setembro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>15</b></td>
+                <td>Grande Prêmio de Singapura</td>
+                <td>Marina Bay Street Circuit, Singapore</td>
+                <td>17 de Setembro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>16</b></td>
+                <td>Grande Prêmio do Japão</td>
+                <td>Suzuka International Racing Course, Suzuka</td>
+                <td>24 de Setembro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>17</b></td>
+                <td>Grande Prêmio do Catar</td>
+                <td>Lusail International Circuit, Lusail</td>
+                <td>8 de Outubro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>18</b></td>
+                <td>Grande Prêmio dos Estados Unidos</td>
+                <td>Circuit of the Americas, Austin, Texas</td>
+                <td>22 de Outubro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>19</b></td>
+                <td>Grande Prêmio do México</td>
+                <td>Autódromo Hermanos Rodríguez, Mexico City</td>
+                <td>29 de Outubro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>20</b></td>
+                <td>Grande Prêmio de São Paulo</td>
+                <td>Interlagos Circuit, São Paulo</td>
+                <td>5 de Novembro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>21</b></td>
+                <td>Grande Prêmio de Las Vegas</td>
+                <td>Las Vegas Strip Circuit, Paradise, Nevada</td>
+                <td>18 de Novembro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>22</b></td>
+                <td>Grande Prêmio de Abu Dhabi</td>
+                <td>Yas Marina Circuit, Abu Dhabi</td>
+                <td>26 de Novembro</td>
+                <td></td>
+            </tr>
+        </table>
+        <footer>
+            Tarefa para Disciplina de Linguagens de Marcação e Script
+        </footer>
+    </body>
+</html>
